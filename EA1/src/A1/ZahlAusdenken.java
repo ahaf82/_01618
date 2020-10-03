@@ -32,11 +32,11 @@ class ZahlAusdenken {
                 System.out.println("Das kann nicht sein!");
                 break;
             case 1:
-                // ↓↓↓ case 1 wird bei ungerade erreicht. weil für n ungerade gilt: f(n) = |n|+2; g(n) = 1 für n % 2 != 0 und g(n) = 2 für n % 2 == 0. Es gilt g(f(n))
+                // ↓↓↓ case 1 wird bei ungerade erreicht. weil für n gilt: f(n) = |n|+2; g(n) = 1 für n % 2 != 0 und g(n) = 2 für n % 2 == 0. Es gilt g(f(n))
                 System.out.println("Die urspruengliche Zahl war ungerade!");
                 break;
             case 2:
-                // ↓↓↓ case 2 wird bei gerade erreicht. weil für n ungerade gilt: f(n) = |n|+2; g(n) = 1 für n % 2 != 0 und g(n) = 2 für n % 2 == 0. Es gilt g(f(n))
+                // ↓↓↓ case 2 wird bei gerade erreicht. weil für n gilt: f(n) = |n|+2; g(n) = 1 für n % 2 != 0 und g(n) = 2 für n % 2 == 0. Es gilt g(f(n))
                 System.out.println("Die urspruengliche Zahl war gerade!");
                 break;
                 // ↓↓↓ default case sollte nicht erreicht werden
