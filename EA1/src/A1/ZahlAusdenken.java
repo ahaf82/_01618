@@ -1,10 +1,10 @@
 package A1;
 
-// todo: Comment on the source code and its purpose
+
 class ZahlAusdenken {
     public static void main(String[] args) {
         // ↓↓↓  Eingabeaparament wird startzahl zugewiesen, sofern existent, ansonsten out-of-bounds exception
-        int startzahl = Integer.parseInt(args[0]);
+        int startzahl = transformCLIInputToInteger(args);
         // ↓↓↓ ergebnis wird gleich startzahl gesetzt.
         int ergebnis = startzahl;
         // ↓↓↓ Sofern Eingabe großer Null, addiere Zwei dazu.
@@ -39,11 +39,25 @@ class ZahlAusdenken {
                 // ↓↓↓ case 2 wird bei gerade erreicht. weil für n gilt: f(n) = |n|+2; g(n) = 1 für n % 2 != 0 und g(n) = 2 für n % 2 == 0. Es gilt g(f(n))
                 System.out.println("Die urspruengliche Zahl war gerade!");
                 break;
-                // ↓↓↓ default case sollte nicht erreicht werden
+            // ↓↓↓ default case sollte nur erreicht werden, wenn eingabewert sehr nah an maxInt +-2147483647 und dadurch folgende addition über/unter maxInt
             default:
                 System.out.println("Fehler!");
         }
         // ↓↓↓ Die startzahl wird erneut ausgegeben
         System.out.println("startzahl = " + startzahl);
     }
+
+    private static int transformCLIInputToInteger(String[] args) {
+        int retVal = 0;
+        try {
+            return Integer.parseInt(args[0]);
+        } catch (ArrayIndexOutOfBoundsException | NumberFormatException $exception) {
+            System.out.println("No input integer provided");
+            System.exit(1);
+        }
+        return retVal;
+    }
+
+
 }
+
