@@ -1,4 +1,4 @@
-package A3;
+package a3;
 
 public class Summierer {
     public static void main(String[] args) {
