@@ -1,10 +1,11 @@
-package a3;
+package EA1.a3;
+
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class SummiererTest {
+class TestSummierer {
     Summierer summierer = new Summierer();
 
     @Test

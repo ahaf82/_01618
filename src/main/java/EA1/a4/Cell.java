@@ -1,4 +1,4 @@
-package a4;
+package EA1.a4;
 
 public class Cell {
     Boolean isAlive;

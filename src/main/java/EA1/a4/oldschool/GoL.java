@@ -1,4 +1,4 @@
-package a4.oldschool;
+package EA1.a4.oldschool;
 
 public class GoL {
     private final int gameSquareSize = 5;

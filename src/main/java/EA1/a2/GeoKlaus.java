@@ -1,4 +1,4 @@
-package a2;
+package EA1.a2;
 
 public class GeoKlaus {
     public static void main(String[] args) {

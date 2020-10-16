@@ -1,4 +1,4 @@
-package a1;
+package EA1.a1;
 
 
 class ZahlAusdenken {
