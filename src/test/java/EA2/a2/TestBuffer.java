@@ -21,7 +21,6 @@ class TestBuffer {
             currentElement = currentElement.getNext();
         }
         assertEquals(10, counter);
-        System.out.println(counter);
     }
 
     @Test
