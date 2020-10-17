@@ -10,7 +10,6 @@ plugins {
 
 test {
     useJUnitPlatform()
-
 }
 
 repositories {
@@ -18,5 +17,4 @@ repositories {
 }
 dependencies {
     testCompile 'org.junit.jupiter:junit-jupiter:5.4.2'
-
 }
