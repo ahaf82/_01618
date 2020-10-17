@@ -22,9 +22,9 @@ public class someCaller {
         // Der Aufruf geht nicht, weil die zurückgegebene Klasse der Factory eine Instanz von Car ist, dessen Interface
         // tunePower() nicht deklariert.
         // d
-        // Ich verstehe die Frage schon wieder nicht. Was ist "mein Auto" ? Ich vermute ich soll eine CarKlasse instanziieren.
+        // Ich verstehe die Frage schon wieder nicht. Was ist "mein Auto" ? Ich vermute ich soll eine CarKlasse direkt instanziieren?
         RealCar powerCar = new RealCar(1);
         powerCar.tunePower();
-
+        System.out.println(powerCar.readMotorPowerInKiloWatt());
     }
 }
